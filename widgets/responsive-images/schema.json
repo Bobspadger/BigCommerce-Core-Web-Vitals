@@ -1,0 +1,309 @@
+[
+  {
+    "id": "Images",
+    "type": "array",
+    "label": "Images Set.",
+    "schema": [
+      {
+        "type": "tab",
+        "label": "Images Info",
+        "sections": [
+          {
+            "settings": [
+              {
+                "id": "imageUrl",
+                "type": "imageManager",
+                "default": {
+                  "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/images/stencil/original/image-manager/7-12-string.png",
+                  "type": "IMAGE_MANAGER"
+                }
+              },
+              {
+                "id": "paddingImage",
+                "type": "boxModel",
+                "label": "Padding (px)",
+                "default": {
+                  "top": {
+                    "type": "px",
+                    "value": "10"
+                  },
+                  "left": {
+                    "type": "px",
+                    "value": "10"
+                  },
+                  "right": {
+                    "type": "px",
+                    "value": "10"
+                  },
+                  "bottom": {
+                    "type": "px",
+                    "value": "10"
+                  }
+                }
+              },
+              {
+                "id": "target",
+                "type": "select",
+                "label": "Link Action",
+                "default": "_self",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Open new page",
+                      "value": "_blank"
+                    },
+                    {
+                      "label": "Open in the same page",
+                      "value": "_self"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "link",
+                "type": "input",
+                "label": "Link",
+                "default": ""
+              },
+              {
+                "id": "alt",
+                "type": "input",
+                "label": "Alt image",
+                "default": ""
+              },
+              {
+                "id": "width",
+                "type": "input",
+                "label": "width",
+                "default": "600"
+              },
+              {
+                "id": "height",
+                "type": "input",
+                "label": "height",
+                "default": "600"
+              },
+              {
+                "id": "loading",
+                "type": "select",
+                "label": "Lazy loading for below the fold images",
+                "default": "eager",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Eager",
+                      "value": "eager"
+                    },
+                    {
+                      "label": "Lazy",
+                      "value": "lazy"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "fetchPriority",
+                "type": "select",
+                "label": "Fetch priority (high for important images above the fold)",
+                "default": "auto",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "High",
+                      "value": "high"
+                    },
+                    {
+                      "label": "Low",
+                      "value": "low"
+                    },
+                    {
+                      "label": "Auto",
+                      "value": "auto"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "entryLabel": "Image",
+    "defaultCount": 5
+  },
+  {
+    "type": "tab",
+    "label": "Design",
+    "sections": [
+      {
+        "label": "Image options",
+        "settings": [
+          {
+            "id": "justifyContent",
+            "type": "select",
+            "label": "Justify content",
+            "default": "center",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Center",
+                  "value": "center"
+                },
+                {
+                  "label": "Start",
+                  "value": "start"
+                },
+                {
+                  "label": "End",
+                  "value": "end"
+                },
+                {
+                  "label": "Flex-start",
+                  "value": "flex-start"
+                },
+                {
+                  "label": "Flex-end",
+                  "value": "flex-end"
+                },
+                {
+                  "label": "Left",
+                  "value": "left"
+                },
+                {
+                  "label": "Right",
+                  "value": "right"
+                },
+                {
+                  "label": "Space-between",
+                  "value": "space-between"
+                },
+                {
+                  "label": "Space-around",
+                  "value": "space-around"
+                },
+                {
+                  "label": "Space-evenly",
+                  "value": "space-evenly"
+                }
+              ]
+            }
+          },
+          {
+            "id": "alignContent",
+            "type": "select",
+            "label": "Align Content",
+            "default": "normal",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Normal",
+                  "value": "normal"
+                },
+                {
+                  "label": "Center",
+                  "value": "center"
+                },
+                {
+                  "label": "Flex-start",
+                  "value": "flex-start"
+                },
+                {
+                  "label": "Flex-end",
+                  "value": "flex-end"
+                },
+                {
+                  "label": "Space-around",
+                  "value": "space-around"
+                },
+                {
+                  "label": "Space-between",
+                  "value": "space-between"
+                },
+                {
+                  "label": "Stretch",
+                  "value": "stretch"
+                }
+              ]
+            }
+          },
+          {
+            "id": "alignItems",
+            "type": "select",
+            "label": "Align Items",
+            "default": "normal",
+            "typeMeta": {
+              "selectOptions": [
+                {
+                  "label": "Center",
+                  "value": "center"
+                },
+                {
+                  "label": "Normal",
+                  "value": "normal"
+                },
+                {
+                  "label": "Flex-start",
+                  "value": "flex-start"
+                },
+                {
+                  "label": "Flex-end",
+                  "value": "flex-end"
+                },
+                {
+                  "label": "Stretch",
+                  "value": "stretch"
+                },
+                {
+                  "label": "Baseline",
+                  "value": "baseline"
+                }
+              ]
+            }
+          },
+          {
+            "id": "row",
+            "type": "range",
+            "label": "Images per row (Desktop)",
+            "default": 3,
+            "typeMeta": {
+              "rangeValues": {
+                "max": 8,
+                "min": 1,
+                "step": 1,
+                "unit": ""
+              }
+            }
+          },
+          {
+            "id": "rowTablet",
+            "type": "range",
+            "label": "Images per row (Tablet)",
+            "default": 2,
+            "typeMeta": {
+              "rangeValues": {
+                "max": 8,
+                "min": 1,
+                "step": 1,
+                "unit": ""
+              }
+            }
+          },
+          {
+            "id": "rowMobile",
+            "type": "range",
+            "label": "Images per row (Mobile)",
+            "default": 1,
+            "typeMeta": {
+              "rangeValues": {
+                "max": 8,
+                "min": 1,
+                "step": 1,
+                "unit": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

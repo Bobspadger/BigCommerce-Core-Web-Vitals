@@ -1,0 +1,94 @@
+<style>
+    .image_{{_.id}} {
+        /* These are defaults on the theme but to make widget-builder work the same way they need to be in this css.*/
+        max-width: 100%;
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    .text-block_{{_.id}} {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container_{{_.id}} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: {{justifyContent}};
+        {{!--align-items: {{alignItems}};--}}
+        {{!--align-content: {{alignContent}};--}}
+    }
+
+    .inner-block_{{_.id}} {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: calc(100% / {{rowMobile}});
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 601px) {
+        .inner-block_{{_.id}} {
+            width: calc(100% / {{rowTablet}});
+        }
+    }
+   /* Desktop */
+    @media screen and (min-width: 801px) {
+        .inner-block_{{_.id}} {
+            width: calc(100% / {{row}});
+        }
+    }
+
+</style>
+<div class="container_{{_.id}}">
+    {{#each Images}}
+        <div class="inner-block_{{../_.id}}"
+             style="
+                     padding-top:{{paddingImage.top.value}}px;
+                     padding-right:{{paddingImage.right.value}}px;
+                     padding-bottom:{{paddingImage.bottom.value}}px;
+                     padding-left:{{paddingImage.left.value}}px;
+                     ">
+            <div class="image-block_{{../_.id}}">
+
+                {{#if link}}
+                    <a href="{{link}}" target="{{target}}">
+                {{/if}}
+                <img class="image_{{../_.id}}"
+                     src="{{strReplace imageUrl.src "original" "160w"}}"
+                     srcset="{{strReplace imageUrl.src "original" "80w"}} 80w,
+                              {{strReplace imageUrl.src "original" "160w"}} 160w,
+                              {{strReplace imageUrl.src "original" "320w"}} 320w,
+                              {{strReplace imageUrl.src "original" "480w"}} 480w,
+                              {{strReplace imageUrl.src "original" "640w"}} 640w,
+                              {{strReplace imageUrl.src "original" "768w"}} 768w,
+                              {{strReplace imageUrl.src "original" "960w"}} 960w,
+                              {{strReplace imageUrl.src "original" "1280w"}} 1280w,
+                              {{strReplace imageUrl.src "original" "1920w"}} 1920w,
+                              {{strReplace imageUrl.src "original" "2560w"}} 2560w
+                                "
+                    {{!-- Moile 0 ->  Tablet 552 -> 800px Desktop 801+ --}}
+                    {{!-- These breakpoints are based on the Supermarket theme page sizes --}}
+                     sizes="
+                     (min-width: 1681px) calc((102.75rem - 4.5rem - 4.5rem) / {{../row}}),
+                     (min-width: 1261px) calc((77.625rem - 2.25rem - 2.25rem) / {{../row}}),
+                     (min-width: 801px) calc((100vw - 2.25rem - 2.25rem) / {{../row}}),
+                     (min-width: 601px) calc((100vw - 0.75rem - 0.75rem - 0.375rem - 0.375rem) / {{../rowTablet}}),
+                     calc((100vw - 0.75rem - 0.75rem - 0.375rem - 0.375rem) / {{../rowMobile}})
+                     "
+
+                     alt="{{alt}}"
+                     width="{{width}}"
+                     height="{{height}}"
+                     loading="{{loading}}"
+                     fetchpriority="{{fetchPriority}}">
+                {{#if link}}
+                    </a>
+                {{/if}}
+            </div>
+        </div>
+    {{/each}}
+</div>
