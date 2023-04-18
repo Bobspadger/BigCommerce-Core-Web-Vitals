@@ -1,0 +1,3 @@
+.DS_Store
+widget.yml # widget-builder will create a widget.yml file with the UUID of the created widget, this is site specific.
+.env # widget-builder will create a .env file with api keys in etc.

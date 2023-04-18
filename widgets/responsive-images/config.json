@@ -1,0 +1,180 @@
+{
+  "Images": [
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/images/stencil/original/image-manager/7-12-string.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "paddingImage": {
+        "top": {
+          "type": "px",
+          "value": "10"
+        },
+        "left": {
+          "type": "px",
+          "value": "10"
+        },
+        "right": {
+          "type": "px",
+          "value": "10"
+        },
+        "bottom": {
+          "type": "px",
+          "value": "10"
+        }
+      },
+      "target": "_self",
+      "width": "600",
+      "height": "600",
+      "loading": "eager",
+      "fetchPriority": "auto",
+      "caption": "lorem ipsum"
+    },
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/images/stencil/original/image-manager/7-12-string.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "paddingImage": {
+        "top": {
+          "type": "px",
+          "value": "10"
+        },
+        "left": {
+          "type": "px",
+          "value": "10"
+        },
+        "right": {
+          "type": "px",
+          "value": "10"
+        },
+        "bottom": {
+          "type": "px",
+          "value": "10"
+        }
+      },
+      "target": "_self",
+      "width": "600",
+      "height": "600",
+      "loading": "eager",
+      "fetchPriority": "auto",
+      "caption": "lorem ipsum"
+    },
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/images/stencil/original/image-manager/7-12-string.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "paddingImage": {
+        "top": {
+          "type": "px",
+          "value": "10"
+        },
+        "left": {
+          "type": "px",
+          "value": "10"
+        },
+        "right": {
+          "type": "px",
+          "value": "10"
+        },
+        "bottom": {
+          "type": "px",
+          "value": "10"
+        }
+      },
+      "target": "_self",
+      "width": "600",
+      "height": "600",
+      "loading": "eager",
+      "fetchPriority": "auto",
+      "caption": "lorem ipsum"
+    },
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/images/stencil/original/image-manager/7-12-string.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "paddingImage": {
+        "top": {
+          "type": "px",
+          "value": "10"
+        },
+        "left": {
+          "type": "px",
+          "value": "10"
+        },
+        "right": {
+          "type": "px",
+          "value": "10"
+        },
+        "bottom": {
+          "type": "px",
+          "value": "10"
+        }
+      },
+      "target": "_self",
+      "width": "600",
+      "height": "600",
+      "loading": "eager",
+      "fetchPriority": "auto",
+      "caption": "lorem ipsum"
+    },
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/images/stencil/original/image-manager/7-12-string.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "paddingImage": {
+        "top": {
+          "type": "px",
+          "value": "10"
+        },
+        "left": {
+          "type": "px",
+          "value": "10"
+        },
+        "right": {
+          "type": "px",
+          "value": "10"
+        },
+        "bottom": {
+          "type": "px",
+          "value": "10"
+        }
+      },
+      "target": "_self",
+      "width": "600",
+      "height": "600",
+      "loading": "eager",
+      "fetchPriority": "auto",
+      "caption": "lorem ipsum"
+    }
+  ],
+  "justifyContent": "center",
+  "alignContent": "normal",
+  "alignItems": "normal",
+  "row": 3,
+  "rowTablet": 2,
+  "rowMobile": 1,
+  "show_caption": true,
+  "color": "#000",
+  "padding": {
+    "top": {
+      "type": "px",
+      "value": "80"
+    },
+    "left": {
+      "type": "px",
+      "value": "80"
+    },
+    "right": {
+      "type": "px",
+      "value": "80"
+    },
+    "bottom": {
+      "type": "px",
+      "value": "80"
+    }
+  }
+}
