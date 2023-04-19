@@ -51,6 +51,8 @@ sizes="
 ```
 To dynamically create the sizes attribute, there is a bit of fun to be had, the above code works for MY USE CASE , you will most likely need to adjust this to play nicely with your theme.
 
+They `why have you done this` is because if we do not have the correct `sizes` attribute the browser will end up choosing the incorrect image size for the space you have, e.g. You may end up with a 1250w image when you only need the 640w, using more network traffic and time than you require.
+
 As a quick overview, each of the `(min-width)` breakpoints is calculating the value based on `(width of container - padding-left - padding-right [optional - parent padding left and right]) / number of images per row` (This is why I do not provide a margin option on the widget, only padding - margin will increase the size....)
 
 The `number of images` is defined by how many images you have requested be shown on the row, for the different device types. Example, 1 on mobile, 3 on desktop...
