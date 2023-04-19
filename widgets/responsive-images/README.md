@@ -39,6 +39,26 @@ srcset="{{strReplace imageUrl.src "original" "80w"}} 80w,
                                 "
 ```
 
+Dynamically creating the `sizes` attribute
+```handlebars
+sizes="
+    (min-width: 1681px) calc((102.75rem - 4.5rem - 4.5rem) / {{../row}}),
+    (min-width: 1261px) calc((77.625rem - 2.25rem - 2.25rem) / {{../row}}),
+    (min-width: 801px) calc((100vw - 2.25rem - 2.25rem) / {{../row}}),
+    (min-width: 601px) calc((100vw - 0.75rem - 0.75rem - 0.375rem - 0.375rem) / {{../rowTablet}}),
+    calc((100vw - 0.75rem - 0.75rem - 0.375rem - 0.375rem) / {{../rowMobile}})
+"
+```
+To dynamically create the sizes attribute, there is a bit of fun to be had, the above code works for MY USE CASE , you will most likely need to adjust this to play nicely with your theme.
+
+As a quick overview, each of the `(min-width)` breakpoints is calculating the value based on `(width of container - padding-left - padding-right [optional - parent padding left and right]) / number of images per row` (This is why I do not provide a margin option on the widget, only padding - margin will increase the size....)
+
+The `number of images` is defined by how many images you have requested be shown on the row, for the different device types. Example, 1 on mobile, 3 on desktop...
+
+Some of the calculations use the `100vw` as the layout is responsive, but then move onto `102.75rem` etc as we have a `max-width` container, so after a certain screen size, we know exactly how wide the contaer will be.
+
+Again, to emphasise, you will need to fiddle with this for your use case.
+
 Now we get a bit clever and do something that is not supported by the current bigcommerce widgets - create a srcset with CDN urls!
 
 This gives us a responsive srcset at the widths required (feel free to change for your requirements) 
