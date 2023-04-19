@@ -1,0 +1,186 @@
+<style>
+/*
+NOTES FROM OUR SCSS FILE: THIS SECTION IS IN OUR SCSS AND NOT OUR WIDGET.
+
+    category hub slider
+
+ Moved this block back into the widget as it was not working when used in the stylesheet.
+
+.ams-category-slider .ams-category-item {
+  display: none;
+  margin-left: 5px;
+  marin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.ams-category-slider.ams-category-item:first-child {
+  display: block;
+}
+
+.ams-category-slider.slick-initialized .ams-category-item {
+  display: block;
+}
+
+Hack to put space around the slides.
+
+# the slides 
+.ams-category-slider.slick-slide {
+  margin: 0 5px;
+}
+
+# the parent 
+.ams-category-slider.slick-list {
+  margin: 0 -5px;
+}
+
+  Media queries to generate a height for the container of the slider - based on the predicted size of the slides
+
+  To work out the height required to set the image container to before rendering in the slider....
+  Using 4:3 image ratio:
+
+  4/3 = 1.333333
+
+  So for one image, we need to do potential width / 1.3333 which will give us our height
+  for 2 images next to each other in the slider, we will need width / 2.66666
+  and for 3
+  width / 4   (because 1.3333 * 3 = 4)
+
+  Now the fun part.
+
+  Our available width is set by the .container, so this is sometimes 100% - some padding,
+  or a max-width - some padding.
+
+  The media queries below are based on the breakpoints of the theme, and the calculation is:
+
+
+  (Available width - padding left, - padding right) /  number of slides ratio )
+
+  The available width can be either 100vw (100% of viewport width) or the max-width as per the breakpoints of the theme.
+
+  Ex.
+
+  (100vw - 0.75rem - 0.75rem) / 1.3333 = height to reserve on mobile with single slide.
+
+  (77.625rem - 2.25re - 2.25rem) / 4 = height to reserve for larger breakpoint with max-width set and 3 slides displayed.
+
+ the 0.75 rem on the first example is the padding left and padding right on the .CONTAINER element that
+ EVERYTHING is contained in. (at top of page)
+
+*/
+
+
+  .ams-category-slider {
+    height: calc(
+      (100vw - 0.75rem - 0.75rem) / 1.3333
+    ); /* 1 slide height based on screen width and 4:3 image */
+  }
+
+  @media (min-width: 601px) {
+    .ams-category-slider {
+      height: calc(
+        (100vw - 0.75rem - 0.75rem) / 2.666
+      ); /* 2 slide next to each other height based on screen width and 4:3 image */
+    }
+  }
+
+  @media (min-width: 801px) {
+    .ams-category-slider {
+      height: calc((100vw - 2.25rem - 2.25rem) / 2.666);
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .ams-category-slider {
+      height: calc((100vw - 2.25rem - 2.25rem) / 4);
+    }
+  }
+
+  @media (min-width: 1261px) {
+    .ams-category-slider {
+      height: calc((77.625rem - 2.25rem - 2.25rem) / 4);
+    }
+  }
+
+  @media (min-width: 1681px) {
+    .ams-category-slider {
+      height: calc((102.75rem - 4.5rem - 4.5rem) / 4);
+    }
+  }
+
+/* END OF ITEMS FROM OUR SCSS */
+
+  .ams-category-slider .ams-category-item {
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .ams-category-slider.ams-category-item:first-child {
+    display: block;
+  }
+
+  .ams-category-slider.slick-initialized .ams-category-item {
+    display: block;
+  }
+
+  /*Hack to put space around the slides.*/
+  /* the slides */
+  .ams-category-slider.slick-slide {
+    margin: 0 5px;
+  }
+
+  /* the parent */
+  .ams-category-slider.slick-list {
+    margin: 0 -5px;
+  }
+</style>
+<div
+  class="ams-category-slider"
+  data-slick-delay="2000"
+  data-slick='{
+            "dots": false,
+            "arrows": false,
+            "infinite": false,
+            "speed": 300,
+            "slidesToShow": 3,
+            "slidesToScroll": 4,
+            "mobileFirst": true,
+            "responsive": [
+                {
+                    "breakpoint": 1024,
+                    "settings": {
+                        "slidesToShow": 3,
+                        "slidesToScroll": 3,
+                        "infinite": true,
+                        "dots": false
+                    }
+                },
+                {
+                    "breakpoint": 600,
+                    "settings": {
+                        "slidesToShow": 2,
+                        "slidesToScroll": 2,
+                        "infinite": true,
+                        "autoplay": true
+                    }
+                },
+                {
+                    "breakpoint": 0,
+                    "settings": {
+                        "slidesToShow": 1,
+                        "slidesToScroll": 1,
+                        "infinite": true,
+                        "autoplay": true
+                    }
+                }
+        ]}'
+>
+  {{#each image}}
+  <div class="ams-category-item">
+    <a href="{{link}}" target="{{target}}"
+      ><img src="{{imageUrl.src}}" alt="{{alt}}"
+    /></a>
+  </div>
+  {{/each}}
+</div>
