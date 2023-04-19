@@ -6,4 +6,4 @@ Simply use the inbuilt Bigcommerce HTML widget and copy paste the code in - chan
 
 Its fairly simple to adjust to layout etc to suite your own needs.
 
-Again, remember to set the image dimensions on the `<img>` tag - do not add in pixels!
+Again, remember to set the image dimensions on the `<img>` tag - do not add in pixels!, and adjust the `loading=` and `fetchpriority=` attributes to match your needs.
