@@ -1,0 +1,65 @@
+[
+  {
+    "id": "image",
+    "type": "array",
+    "label": "Category slider images",
+    "schema": [
+      {
+        "type": "tab",
+        "label": "Category image data",
+        "sections": [
+          {
+            "settings": [
+              {
+                "id": "imageUrl",
+                "type": "imageManager",
+                "default": {
+                  "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/stencil/4afb5f30-5152-013b-ae00-12faf44dc2e9/e/c7c8b4e0-bc7e-0139-e964-7286b7d084cd/img/placeholder/category/150.png",
+                  "type": "IMAGE_MANAGER"
+                }
+              },
+              {
+                "id": "imageName",
+                "type": "input",
+                "label": "Image Caption",
+                "default": "#"
+              },
+              {
+                "id": "target",
+                "type": "select",
+                "label": "Link Action",
+                "default": "_self",
+                "typeMeta": {
+                  "selectOptions": [
+                    {
+                      "label": "Open new page",
+                      "value": "_blank"
+                    },
+                    {
+                      "label": "Open in the same page",
+                      "value": "_self"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "link",
+                "type": "input",
+                "label": "Link",
+                "default": "#"
+              },
+              {
+                "id": "alt",
+                "type": "input",
+                "label": "Alt image",
+                "default": "#"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "entryLabel": "Image",
+    "defaultCount": 3
+  }
+]

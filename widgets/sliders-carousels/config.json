@@ -1,0 +1,34 @@
+{
+  "image": [
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/stencil/4afb5f30-5152-013b-ae00-12faf44dc2e9/e/c7c8b4e0-bc7e-0139-e964-7286b7d084cd/img/placeholder/category/150.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "imageName": "#",
+      "target": "_self",
+      "link": "#",
+      "alt": "#"
+    },
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/stencil/4afb5f30-5152-013b-ae00-12faf44dc2e9/e/c7c8b4e0-bc7e-0139-e964-7286b7d084cd/img/placeholder/category/150.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "imageName": "#",
+      "target": "_self",
+      "link": "#",
+      "alt": "#"
+    },
+    {
+      "imageUrl": {
+        "src": "https://cdn11.bigcommerce.com/s-rpqwiebvo4/stencil/4afb5f30-5152-013b-ae00-12faf44dc2e9/e/c7c8b4e0-bc7e-0139-e964-7286b7d084cd/img/placeholder/category/150.png",
+        "type": "IMAGE_MANAGER"
+      },
+      "imageName": "#",
+      "target": "_self",
+      "link": "#",
+      "alt": "#"
+    }
+  ]
+}
