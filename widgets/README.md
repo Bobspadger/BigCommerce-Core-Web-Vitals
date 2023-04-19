@@ -33,3 +33,4 @@ Once you have uploaded the widget to Bigcommerce you can start using it in the p
 ## Widgets in this repository:
 
 - [responsive-images](responsive-images/README.md) -> How to add images to a page without ruining your CLS and LCP.
+- [sliders-carousels](sliders-carousels/README.md) -> A slick slider widget with no CLS issues (And potentially less thread blocking).
