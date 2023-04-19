@@ -18,4 +18,4 @@ Feel free to submit pull requests etc for improvements, whether this is to impro
 
 ## Standing on the shoulders of Giants.
 
-Its worth stressing that this work is really just an implementation of the incredible work done by Tony Mcreith at [Website advantage](https://websiteadvantage.com.au/Bigcommerce). I'd suggest going and reading his blog posts on the all the reasons why these widgets and code snippets exist.
+Its worth stressing that this work is really just an implementation of the incredible work done by Tony Mcreath at [Website advantage](https://websiteadvantage.com.au/Bigcommerce). I'd suggest going and reading his blog posts on the all the reasons why these widgets and code snippets exist.
