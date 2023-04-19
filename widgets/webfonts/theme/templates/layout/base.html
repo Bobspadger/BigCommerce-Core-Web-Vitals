@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale_name }}">
+  <head>
+{{> components/ams/fonts/preload-fonts}}    
+{{!-- DISABLE LOADING GOOGLE FONTS
+            <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700|Quicksand:400|Barlow:900,600,400&amp;display=block" rel="stylesheet">
+--}}
+            <link rel="preload" href="{{cdn 'assets/dist/theme-bundle.font.js' resourceHint='preload' as='script'}}" as="script">
+            <script async src="{{cdn 'assets/dist/theme-bundle.font.js'}}"></script>
+</head>
+  <body></body>
+</html>

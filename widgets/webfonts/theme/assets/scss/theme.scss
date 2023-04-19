@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src: url("../fonts/lato-bold-webfont.woff2") format('woff2'),
+  url("../fonts/lato-bold-webfont.woff") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url("../fonts/lato-regular-webfont.woff2") format('woff2'),
+  url("../fonts/lato-regular-webfont.woff2") format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 900;
+  src: url("../fonts/barlow-black-webfont.woff2") format('woff2'),
+  url("../fonts/barlow-black-webfont.woff2") format('woff');
+  font-display: swap;
+}
