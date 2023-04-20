@@ -18,5 +18,5 @@ There is also the `data-slick-delay` attribute applied which requires the adjust
 
 
 ## What you need to change:
-- Look in the html widget, work out your slide sizes and adjust the calculations to suit (ie, slides 400x300 = 400/300 = 1.333 as the aspect ration) this then goes into the calculations, including any padding etc to work out the min-height required for the carousel to stop the CLS.
+- Look in the html widget, work out your slide sizes and adjust the calculations to suit (ie, slides 400x300 = 400/300 = 1.333 as the aspect ratio) this then goes into the calculations, including any padding etc to work out the min-height required for the carousel to stop the CLS.
 - Adjust the calculations for break points / number of slides etc.
