@@ -19,7 +19,7 @@ Have a good read of the widget builder documentation for commands available to y
 
 `widget-builder start responsive-images`
 
-### To upload as widget:
+### To upload a widget:
 
 From the directory above the widget folder:
 
