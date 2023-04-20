@@ -12,7 +12,7 @@ This is a quick extract of our category carousel that we use in various places a
 I've not checked this is fully 100% functional in this form, as our implementation of this has some of the CSS in the SCSS files of the theme - I have extracted this and
 added it to the `<style>` element in the widget.
 
-*** You may also need to look at how the slick carousel is activated in the theme JS - some themse change this to suit their needs ***
+*** You may also need to look at how the slick carousel is activated in the theme JS - some themes change this to suit their needs ***
 
 There is also the `data-slick-delay` attribute applied which requires the adjustment of your themes JS files - see Tony's article [HERE](https://bigcommerce.websiteadvantage.com.au/tag-rocket/articles/bigcommerce-speed-optimisation-carousel/) on this
 
