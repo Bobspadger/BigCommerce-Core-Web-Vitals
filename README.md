@@ -13,9 +13,9 @@ These examples are examples from my own experimentation, poking, prodding and a 
 
 ## Contributing
 
-Feel free to submit pull requests etc for improvements, whether this is to improve the repository with performance, more generic use cases , documentation or just to add more Dog photos.
+Feel free to submit pull requests etc for improvements, whether this is to improve the repository with performance, more generic use cases, documentation or just to add more Dog photos.
 
 
 ## Standing on the shoulders of Giants.
 
-Its worth stressing that this work is really just an implementation of the incredible work done by Tony Mcreath at [Website advantage](https://websiteadvantage.com.au/Bigcommerce). I'd suggest going and reading his blog posts on the all the reasons why these widgets and code snippets exist.
+Its worth stressing that this work is really just an implementation of the incredible work done by Tony McCreath at [Web Site Advantage](https://bigcommerce.websiteadvantage.com.au/). I'd suggest going and reading his [blog posts](https://bigcommerce.websiteadvantage.com.au/tag-rocket/articles/) on the all the reasons why these widgets and code snippets exist.
